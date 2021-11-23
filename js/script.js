@@ -8,7 +8,9 @@
 const myGrid = document.querySelector('.game-grid');
 // console.log(myGrid);
 
+
 const playBtn = document.querySelector('.play-button').addEventListener('click', optionSelected);
+
 
 // Griglia generata se l'utente sceglie la Option Easy dalla Select (100 numeri -> da 1 a 100)
 function optionSelected() {
@@ -25,6 +27,10 @@ function optionSelected() {
             thisSquare.style.height = 'calc(100% / 10);';
         
             myGrid.appendChild(thisSquare);
+
+            thisSquare.addEventListener('click', function(){
+                thisSquare.classList.add('active');
+            })
         }
     } 
     else if(document.getElementById('select-level').value == "normal") {
@@ -40,6 +46,10 @@ function optionSelected() {
             thisSquare.style.height = 'calc(100% / 9);';
         
             myGrid.appendChild(thisSquare);
+
+            thisSquare.addEventListener('click', function(){
+                thisSquare.classList.add('active');
+            })
         }
     } 
     else if(document.getElementById('select-level').value == "hard") {
@@ -55,12 +65,13 @@ function optionSelected() {
             thisSquare.style.height = 'calc(100% / 7);';
         
             myGrid.appendChild(thisSquare);
+
+            thisSquare.addEventListener('click', function(){
+                thisSquare.classList.add('active');
+            })
         }
     }
 }
 
 
-// Griglia generata se l'utente sceglie la Option Normal dalla Select (81 numeri -> da 1 a 81)
 
-
-// Griglia generata se l'utente sceglie la Option Hard dalla Select (49 numeri -> da 1 a 49)

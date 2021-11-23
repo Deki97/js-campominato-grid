@@ -21,10 +21,12 @@ function optionSelected() {
         
             const thisSquare = document.createElement('div');
             thisSquare.classList.add('square');
+
+            thisSquare.style.width = 'calc(100% / 10)';
+            thisSquare.style.height = 'calc(100% / 10)';
+
             thisSquare.innerHTML = `${thisElement}`;
             
-            thisSquare.style.width = 'calc(100% / 10);';
-            thisSquare.style.height = 'calc(100% / 10);';
         
             myGrid.appendChild(thisSquare);
 
@@ -42,8 +44,8 @@ function optionSelected() {
             thisSquare.classList.add('square');
             thisSquare.innerHTML = `${thisElement}`;
             
-            thisSquare.style.width = 'calc(100% / 9);';
-            thisSquare.style.height = 'calc(100% / 9);';
+            thisSquare.style.width = 'calc(100% / 9)';
+            thisSquare.style.height = 'calc(100% / 9)';
         
             myGrid.appendChild(thisSquare);
 
@@ -61,8 +63,8 @@ function optionSelected() {
             thisSquare.classList.add('square');
             thisSquare.innerHTML = `${thisElement}`;
             
-            thisSquare.style.width = 'calc(100% / 7);';
-            thisSquare.style.height = 'calc(100% / 7);';
+            thisSquare.style.width = 'calc(100% / 7)';
+            thisSquare.style.height = 'calc(100% / 7)';
         
             myGrid.appendChild(thisSquare);
 
